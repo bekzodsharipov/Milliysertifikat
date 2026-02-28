@@ -81,18 +81,7 @@
 
 
   <script defer>
-    let totalSeconds = 60; const timerElement = document.getElementById("timer"); const countdown = setInterval(() => { if (totalSeconds <= 0) { clearInterval(countdown); return; } totalSeconds--; let minutes = Math.floor(totalSeconds / 60); let seconds = totalSeconds % 60; let formattedMinutes = minutes.toString().padStart(1, "0"); let formattedSeconds = seconds.toString().padStart(2, "0"); timerElement.textContent = `0${formattedMinutes}:${formattedSeconds}`; }, 1000); const img = document.querySelector(".blur-up"); const bigSrc = img.getAttribute("data-src"); const highRes = new Image(); highRes.src = bigSrc; highRes.onload = () => { img.src = bigSrc; img.classList.remove("blur-up"); };
-    document.addEventListener("DOMContentLoaded", () => {
-      const buttons = document.querySelectorAll(".registerBtn");
-
-      buttons.forEach((btn) => {
-        btn.addEventListener("click", () => {
-          if (typeof fbq === "function") {
-            fbq("track", "Purchase");
-          }
-        });
-      });
-    });
+   let totalSeconds=60;const timerElement=document.getElementById("timer"),countdown=setInterval((()=>{if(totalSeconds<=0)return void clearInterval(countdown);totalSeconds--;let t=Math.floor(totalSeconds/60),e=totalSeconds%60,n=t.toString().padStart(1,"0"),o=e.toString().padStart(2,"0");timerElement.textContent=`0${n}:${o}`}),1e3);document.addEventListener("DOMContentLoaded",(()=>{document.querySelectorAll(".registerBtn").forEach((t=>{t.addEventListener("click",(()=>{"function"==typeof fbq&&fbq("track","Purchase")}))}))}));
   </script>
   <!-- Meta Pixel Code -->
   <script defer>

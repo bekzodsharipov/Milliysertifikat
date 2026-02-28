@@ -42,8 +42,6 @@
     <h1 class="mobile-main-title">
       Ramazon oyi munosabati bilan 20 kunlik bepul kursimda qatnashing
     </h1>
-    <div class="mobile-hero-shadow" style="top: -12px; left: -66px !important;"></div>
-    <div class="mobile-hero-shadow" style="top: -12px; left: 100% !important;"></div>
     <div class="mobile-content-img">
       <img src="./img/speaker.avif" alt="Speaker" decoding="async" loading="lazy" class="mobile-hero-image" width="316"
         height="345">
@@ -67,17 +65,7 @@
   </div>
 </main>
   <script defer>
-    document.addEventListener("DOMContentLoaded", () => {
-      const buttons = document.querySelectorAll(".registerBtn");
-
-      buttons.forEach((btn) => {
-        btn.addEventListener("click", () => {
-          if (typeof fbq === "function") {
-            fbq("track", "Purchase");
-          }
-        });
-      });
-    });
+    document.addEventListener("DOMContentLoaded", () => {const buttons = document.querySelectorAll(".registerBtn");buttons.forEach((btn) => {btn.addEventListener("click", () => {if (typeof fbq === "function") {fbq("track", "Purchase");}});});});
   </script>
   <!-- Meta Pixel Code -->
   <script defer>
