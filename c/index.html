@@ -81,8 +81,8 @@
 
 
   <script defer>
-    let totalSeconds = 60; const timerElement = document.getElementById("timer"), countdown = setInterval((() => { if (totalSeconds <= 0) return void clearInterval(countdown); totalSeconds--; let t = Math.floor(totalSeconds / 60), e = totalSeconds % 60, n = t.toString().padStart(1, "0"), o = e.toString().padStart(2, "0"); timerElement.textContent = `0${n}:${o}` }), 1e3); document.addEventListener("DOMContentLoaded", (() => { document.querySelectorAll(".registerBtn").forEach((t => { t.addEventListener("click", (() => { "function" == typeof fbq && fbq("track", "Purchase") })) })) }));
-  </script>
+   let totalSeconds=60;const timerElement=document.getElementById("timer"),countdown=setInterval((()=>{if(totalSeconds<=0)return void clearInterval(countdown);totalSeconds--;let t=Math.floor(totalSeconds/60),e=totalSeconds%60,o=t.toString().padStart(1,"0"),n=e.toString().padStart(2,"0");timerElement.textContent=`0${o}:${n}`}),1e3);
+      </script>
   <!-- Meta Pixel Code -->
   <script defer>
     function loadPixel() {
